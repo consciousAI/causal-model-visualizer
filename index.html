@@ -42,6 +42,8 @@
       </div>
       </div>
       <div class="row">
+          
+<!-- This div is used for graph input -->
         <div class="col-md-4">
           <textarea id="graphinput">
 <NODES>
@@ -56,12 +58,33 @@ x -- y U
 z1 -> x
 z2 -> x
 
-
           </textarea>
         </div>
+              
+<!-- This div is used for graph display -->
         <div class="col-md-8">
           <div id="graphvis"></div>
        </div>
+
+<!-- This div is used to show details of selction on the graph -->
+        <div class="col-md-4">
+          <textarea id="graphoutput">
+            <NODES>
+            x
+            y
+            z1 $z_1$
+            z2 $z_2$
+
+            <EDGES>
+            x -> y
+            x -- y U
+            z1 -> x
+            z2 -> x
+                
+          </textarea>
+        </div>
+              
+              
       </div>
 
     </div>
