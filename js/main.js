@@ -4,6 +4,13 @@ var dpanel = CodeMirror.fromTextArea(document.getElementById("graphoutput"), {
     autofocus: true,
     viewportMargin: Infinity
 });
+
+var el = document.getElementById('mynetwork');
+function displayData() {
+  document.getElementById("graphoutput").innerHTML = el.getSelectedNodes();
+}
+
+
 // end test code....
 
 var editor = CodeMirror.fromTextArea(document.getElementById("graphinput"), {
