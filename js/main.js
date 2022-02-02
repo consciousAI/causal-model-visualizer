@@ -54,6 +54,7 @@ function drawGraph(data) {
             if (mathOut[i].img!==undefined) {
                 node.image = mathOut[i].img;
                 node.shape='circularImage';
+                node.color = red;
             } else {
                 node.label = mathOut[i].label;
             }
@@ -72,6 +73,7 @@ function drawGraph(data) {
                 edge.arrows = 'to, from';
                 edge.dashes = true;
                 edge.length = 200;
+                edge.color = blue;
                 edge.smooth = {
                     enabled: true,
                     type: 'curvedCW',
