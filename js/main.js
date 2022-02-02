@@ -5,12 +5,7 @@ var dpanel = CodeMirror.fromTextArea(document.getElementById("graphoutput"), {
     viewportMargin: Infinity
 });
 
-var el = document.getElementById('mynetwork');
 document.getElementById("graphoutput").innerHTML = 5 + 6;
-function displayData() {
-
-  document.getElementById("graphoutput").innerHTML = el.getSelectedNodes();
-}
 
 
 // end test code....
@@ -33,6 +28,10 @@ var data = {
     edges: edges
 };
 
+//delete 31 to 34
+function displayData() {
+  document.getElementById("graphoutput").innerHTML = container.getSelectedNodes();
+}
 
 var visualization = new vis.Network(document.getElementById("graphvis"), data, {});
 
