@@ -6,7 +6,9 @@ var dpanel = CodeMirror.fromTextArea(document.getElementById("graphoutput"), {
 });
 
 var el = document.getElementById('mynetwork');
+document.getElementById("graphoutput").innerHTML = 5 + 6;
 function displayData() {
+
   document.getElementById("graphoutput").innerHTML = el.getSelectedNodes();
 }
 
