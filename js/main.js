@@ -1,3 +1,11 @@
+// testing formating of the display panel
+var dpanel = CodeMirror.fromTextArea(document.getElementById("graphoutput"), {
+    lineNumbers: true,
+    autofocus: true,
+    viewportMargin: Infinity
+});
+// end test code....
+
 var editor = CodeMirror.fromTextArea(document.getElementById("graphinput"), {
     lineNumbers: true,
     autofocus: true,
